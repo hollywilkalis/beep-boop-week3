@@ -1,15 +1,17 @@
 //back end logic begins here
+
+
 function splittingArray(phrase) {
   var phrase = $("#phrase").val();
   var phraseArray = phrase.split();
   var arrayConverted = phraseArray.map(convertDigits);
-  var completePhrase = arrayConverted.join(" ");
-  return completePhrase;
+  // var completePhrase = arrayConverted.join(" ");
+  return arrayConverted;
 }
 
 function convertDigits(phraseArray) {
+  var newArray = [];
   for (var i = 0; i < phraseArray.length; i++) {
-    var newArray = [];
     phraseArray[i] = parseInt(phraseArray[i]);
     if ((phraseArray[0]) === 1) {
       newArray.push("Boop! ");
@@ -35,7 +37,7 @@ $(document).ready(function() {
     event.preventDefault();
     debugger
     var phrase = $("#phrase").val();
-    $("#output").text(splittingArray($("#completePhrase").val()));
+    $("#output").text(splittingArray($("#arrayConverted").val()));
     $(".output-box").show();
     $('#formid')[0].reset();
   }); //close form submit
