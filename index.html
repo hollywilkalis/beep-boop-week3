@@ -10,14 +10,14 @@
   <body>
     <div class="container">
       <h1>Boop Beep To You Too Dave!</h1>
-      <form>
-        <div class="form-group">
-          <label for="numberInput">Type in a number, and we'll do something funny with it. We promise.</label>
-          <input type="number" class="form-control" id="numberInput" placeholder="Please enter your number here">
-        </div>
+      <form id="survey">
+        <label for="inputString">Type in a number, and we'll do something funny with it. We promise.</label>
+        <input type="text" class="form-control" id="inputString" placeholder="Please enter your number here">
         <button type="submit" class="btn btn-warning">Submit</button>
       </form>
-
+      <div id="result">
+        <p>Your result is <span id="finalAnswer"></span></p>
+      </div>
 
     </div><!--close container-->
 
