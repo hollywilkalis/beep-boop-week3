@@ -1,15 +1,13 @@
 //back end logic begins here
-function splitArray(phrase, numberToConvert) {
-  var arrayConverted = numberToConvert.map(convertDigits);
-  phrase = newArray.join(" ");
-  return phrase;
+function splitArray(numberToConvert) {
+  var phraseArray = numberToConvert.split("");
+  var arrayConverted = phraseArray.map(convertDigits);
+  return arrayConverted;
 }
 
-function convertDigits(numberToConvert) {
-  var digitArray = numberToConvert.split("");
+function convertDigits(phraseArray) {
   var newArray = [];
-
-  for (var i = 0; i < digitArray.length; i++) {
+  for (var i = 0; i < phraseArray.length; i++) {
     if (i === 1) {
       newArray.push("Boop! ");
     }
@@ -23,6 +21,7 @@ function convertDigits(numberToConvert) {
       newArray.push(i);
     }
   }
+  return newArray;
 };
 
 
