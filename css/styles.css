@@ -3,3 +3,8 @@ h1 {
   font-size: 40px;
   margin-top: 20px;
 }
+
+.output-box {
+  display: none;
+  text-align: center;
+}

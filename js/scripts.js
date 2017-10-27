@@ -1,8 +1,29 @@
 //back end logic begins here
-function (conversion(numberToConvert) {
-  var inputArray = numberToConvert.split("");
+function splitArray(phrase, numberToConvert) {
+  var arrayConverted = numberToConvert.map(convertDigits);
+  phrase = newArray.join(" ");
+  return phrase;
+}
 
-})
+function convertDigits(numberToConvert) {
+  var digitArray = numberToConvert.split("");
+  var newArray = [];
+
+  for (var i = 0; i < digitArray.length; i++) {
+    if (i === 1) {
+      newArray.push("Boop! ");
+    }
+    else if (i === 0) {
+      newArray.push("Beep! ");
+    }
+    else if (i % 3 === 0) {
+      newArray.push("I'm sorry, Dave, I can't do that. ");
+    }
+    else {
+      newArray.push(i);
+    }
+  }
+};
 
 
 
@@ -10,8 +31,8 @@ function (conversion(numberToConvert) {
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
-    var numberToConvert = parseInt($("#inputString").val());
-
-
+    var numberToConvert = parseInt($("#phrase").val());
+    $("#output").text(splitArray($("#phrase").val()));
+    $(".output-box").show();
   }); //close form submit
 }); //close ready function
