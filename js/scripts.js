@@ -1,24 +1,28 @@
+var newArray = [];
+
 //back end logic begins here
-function splitArray(numberToConvert) {
-  var phraseArray = numberToConvert.split("");
+function splittingArray(phrase) {
+  var phrase = $("#phrase").val();
+  var phraseArray = phrase.split();
   var arrayConverted = phraseArray.map(convertDigits);
-  return arrayConverted;
+  var completePhrase = arrayConverted.join(" ");
+  return completePhrase;
 }
 
 function convertDigits(phraseArray) {
-  var newArray = [];
   for (var i = 0; i < phraseArray.length; i++) {
-    if (i === 1) {
+    phraseArray[i] = parseInt(phraseArray[i]);
+    if (phraseArray[0] === 1) {
       newArray.push("Boop! ");
     }
-    else if (i === 0) {
+    else if (phraseArray[0] === 0) {
       newArray.push("Beep! ");
     }
-    else if (i % 3 === 0) {
+    else if (phraseArray[0] % 3 === 0) {
       newArray.push("I'm sorry, Dave, I can't do that. ");
     }
     else {
-      newArray.push(i);
+      newArray.push(phraseArray[0]);
     }
   }
   return newArray;
@@ -30,8 +34,9 @@ function convertDigits(phraseArray) {
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
-    var numberToConvert = parseInt($("#phrase").val());
-    $("#output").text(splitArray($("#phrase").val()));
+    debugger
+    var phrase = $("#phrase").val();
+    $("#output").text(splittingArray($("#completePhrase").val()));
     $(".output-box").show();
   }); //close form submit
 }); //close ready function
