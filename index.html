@@ -9,16 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>Boop Beep To You Too Dave!</h1>
+      <img src="img/hal_630px.jpg" alt="astronaut" class="rounded mx-auto d-block">
+      <h1>What's your question, Dave?</h1>
+      <p class="prompt">Have a question for Hal? He's currently experiencing some technical difficulties and can only understand questions phrased as a string of numbers. Type your number in the box below and hit the "Hal Says" button to see what his response is.</p>
       <form id="survey">
-        <label for="phrase">Type in a number, and we'll do something funny with it. We promise.</label>
-        <input type="text" class="form-control" id="phrase" placeholder="Please enter your number here">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="number" class="form-control" id="phrase" placeholder="Please enter your number here">
+        <button type="submit" class="btn">HAL SAYS</button>
       </form>
-      </div>
+
       <div class="output-box">
-        <h3>Here is your translation!</h3>
-        <p id="output"></p>
+        <p class="response">"<span id="output"></span>"</p>
       </div>
     </div><!--close container-->
 

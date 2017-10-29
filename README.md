@@ -1,69 +1,54 @@
-# _Epicodus Review Project Week Three_
+# Epicodus Review Project Week Three
 
-#### _Takes input numbers and returns a silly string of responses from Hal, October 2017_
+#### Takes input numbers and returns a silly string of responses from Hal, October 2017
 
-#### By _Holly Wilkalis_
+#### By Holly Wilkalis
 
 ## Description
-_Project requirements:
+Project specifications are:
 
-1) It can accept a number (of any length) and return that number to the user one character at a time
-	Input: 	2
-	Output: 	2
+It can accept a number (of any length) and return that number to the user one character at a time
+	Sample Input: 	2
+	Sample Output: 	2
 
-	Input: 	3456
-	Output: 	3
-			4
-			5
-			6
+	Sample Input: 	3456
+	Sample Output: 	3456
 
-2) When returning 3the number to the user, any occurrences of “1” will be replaced with the phrase “Boop!”
-	Input: 	412
-	Output: 	4
-			“Boop!”
-			2
+When returning the number to the user, any occurrences of “1” will be replaced with the phrase “Boop!”
+	Sample Input: 	412
+	Sample Output: 	4 Boop! 2
 
 
-3) When returning the number to the user, any occurrences of “0” will be replaced with the phrase “Beep!”
-	Input:		520
-	Output: 	5
-			2
-			“Beep!”
+When returning the number to the user, any occurrences of “0” will be replaced with the phrase “Beep!”
+	Sample Input:		520
+	Sample Output: 	5 2 Beep!
 
-4) When returning the number to the user, any numbers divisible by 3 are replaced with the phrase, “I’m sorry, Dave. I’m afraid I can’t do that.”
-	Input: 	297
-	Output: 	2
-			“I’m sorry, Dave, I’m afraid I can’t do that.”
-			7
+When returning the number to the user, any numbers divisible by 3 are replaced with the phrase, “I’m sorry, Dave. I’m afraid I can’t do that.”
+	Sample Input: 	297
+	Sample Output: 	2 I’m sorry, Dave, I’m afraid I can’t do that. 7
 
-5) When returning the number to the user, all replacements indicated in #2, 3 and 4 will occur.
+When returning the number to the user, all replacements indicated in the previous 3 steps will occur.
 	Input: 	1034
-	Output:	“Boop!”
-			“Beep!”
-			“I’m sorry, Dave, I’m afraid I can’t do that.”
-			4
+	Output:	Boop! Beep! I’m sorry, Dave, I’m afraid I can’t do that. 4
 
-6) User should be able to perform this action repeatedly without having to refresh the page._
+User should be able to perform all of the above actions repeatedly without having to refresh the page.
 
 ## Setup/Installation Requirements
 
-* _To view the site, go to https://hollywilkalis.github.io/beep-boop-week3/_
+* To view the site, go to https://hollywilkalis.github.io/beep-boop-week3/
+* To access the HTML, stylesheets, and scripts for this project, using your Terminal (or equivalent tool), navigate to the directory where you would like to save the files, and type the following command: git clone https://github.com/hollywilkalis/beep-boop-week3
 
-
-## Known Bugs
-
-_The form is currently only returning the corresponding value for the first digit in the input string :(_
 
 ## Support and contact details
 
-_E-mail me at holly.wilkalis@gmail.com_
+Want to talk about the code or this project? E-mail me at holly.wilkalis@gmail.com
 
 ## Technologies Used
 
-_This site created using HTML, Javascript, jQuery, and Bootstrap_
+This page uses HTML, Javascript, jQuery, and Bootstrap.
 
 ### License
 
-*MIT license apples*
+MIT license applies
 
-Copyright (c) 2017 **_Holly Wilkalis_**
+Copyright (c) 2017 **Holly Wilkalis**
